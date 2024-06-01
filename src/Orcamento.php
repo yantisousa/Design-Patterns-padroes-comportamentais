@@ -4,5 +4,9 @@ namespace Src;
 
 class Orcamento
 {
-    public float $valor;
+    public function __construct(
+        public float $valor,
+        public int $quantidadeItens
+    ) {
+    }
 }
